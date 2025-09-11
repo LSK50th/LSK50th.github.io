@@ -38,11 +38,11 @@ body{
     width: 1000px;
 }
 
-a{color: #263c94; text-decoration:none;}
-a.current{color: #52739e;}
-a.current:hover{color: #e82945;}
-a:hover{color: #b2132e;}
-a:active{color: #e82945;}
+a{color: #000000; text-decoration:none;}
+a.current{color: #263c94;}
+a.current:hover{color: #375cf0;}
+a:hover{color: #375cf0;}
+a:active{color: #263c94;}
 h1,h2,h3,h4{clear:left; color: #263c94; margin:1.5em 0em 1em 0em; letter-spacing:1px; font-family:'Roboto',serif; text-shadow: 0px 0px 0px #d0d0d0;}
 h1{font-size:2.67em;}
 h2{font-size:2.00em;}
