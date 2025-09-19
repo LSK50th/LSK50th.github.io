@@ -28,6 +28,9 @@
       height: auto;  /* 비율 유지 */
       display: block;
     }
+    .scrollable{
+        overflow: auto; -webkit-overflow-scrolling: touch;
+    }
   </style>
 </head>
 
@@ -73,7 +76,9 @@
 
     <!-- Coming Soon! -->
     <!-- <embed src="assets/program.pdf" type="application/pdf" width="800" height="1000"> -->
-    <iframe src="assets/program.pdf" width="900" height="1200"></iframe>
+    <div id="wrap" class="scrollable">
+        <iframe src="assets/program.pdf" width="900" height="1200"></iframe>
+    </div>
 <!--     <table>
         <tr>
             <td class="date" rowspan="2">
