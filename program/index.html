@@ -15,19 +15,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <title>한국언어학회 창립 50주년 기념 공동학술대회</title>
+=======
+    <title>Program | LSK50th</title>
+    <style>
+    .container {
+      max-width: 1200px;  /* 본문 최대 폭 */
+      margin: 0 auto;     /* 화면 가운데 정렬 */
+      padding: 0 16px;    /* 좌우 여백 조금 주기 (선택) */
+    }
+
+    .banner img {
+      width: 100%;   /* 컨테이너 폭에 맞춤 */
+      height: auto;  /* 비율 유지 */
+      display: block;
+    }
+    .scrollable{
+        overflow: auto; -webkit-overflow-scrolling: touch;
+    }
+  </style>
+>>>>>>> f4297e5ee005917d1759c22c66923c6eea0497c0
 </head>
 
 <body>
 
     <div class="banner">
-        <img src="assets/snu_night.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">LSK </span><span class="title2">50th Anniversary</span> 
-        </div>
-        <div class="bottom-right">
-            Oct.31 - Nov.1, 2025 <br> Seoul National University
-        </div>
+        <img src="assets/banner_international.png" alt="Conference Template Banner">
+        <!-- <div class="top-left"> -->
+            <!-- <span class="title1">LSK </span><span class="title2">50th Anniversary</span>  -->
+        <!-- </div> -->
+        <!-- <div class="bottom-right"> -->
+            <!-- Oct.31 - Nov.1, 2025 <br> Seoul National University -->
+        <!-- </div> -->
     </div>
 
     <table class="navigation">
@@ -42,20 +62,40 @@
                 <a title="Conference Program" href="program">Program</a> 
             </td>
             <td class="navigation">
+                <a title="Handbook" href="handbook">Handbook</a> 
+            </td>
+            <td class="navigation">
                 <a title="LSK History" href="lsk">LSK</a>
             </td>
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Register</a>
+                <a title="Directions to the Conference" href="directions">Venue</a>
             </td>
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a title="Register for the Conference" href="registration">Register</a>
             </td>
         </tr>
     </table>
 
     <h2>Conference Program</h2>
 
-    Coming Soon!
+    iOS Safari 브라우저를 사용하시는 경우 <a href="assets/program.pdf">👉다운로드 링크👈</a>를 클릭해 주세요.
+    <br>
+    <br>
+    <!-- Coming Soon! -->
+    <!-- <embed src="assets/program.pdf" type="application/pdf" width="800" height="1000"> -->
+    <div id="wrap" class="scrollable" width="600" height="800">
+        <iframe src="assets/program.pdf" width="810" height="1010"></iframe>
+    </div>
+
+<!--     <object id="pdfview" width="100%" height="100%" data="assets/program.pdf">
+        <p>모바일 환경이신 경우 <a href="assets/program.pdf">다운로드 링크</a>를 클릭해 주세요.</p>
+    </object> -->
+    <!-- <iframe src="example.pdf" title="example" width="100%" height="500" frameborder="0"></iframe> -->
+
+
+
+
+
 
 <!--     <table>
         <tr>

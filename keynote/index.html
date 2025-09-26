@@ -12,19 +12,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <title>한국언어학회 창립 50주년 기념 공동학술대회</title>
+=======
+    <title>Keynote Speech | LSK50th</title>
+
+    <style>
+    .justify-text {
+        text-align: justify; /* 텍스트를 양쪽으로 정렬합니다 */
+    }
+    .container {
+      max-width: 1200px;  /* 본문 최대 폭 */
+      margin: 0 auto;     /* 화면 가운데 정렬 */
+      padding: 0 16px;    /* 좌우 여백 조금 주기 (선택) */
+    }
+
+    .banner img {
+      width: 100%;   /* 컨테이너 폭에 맞춤 */
+      height: auto;  /* 비율 유지 */
+      display: block;
+    }
+    </style>
+>>>>>>> f4297e5ee005917d1759c22c66923c6eea0497c0
 </head>
 
 <body>
 
     <div class="banner">
-        <img src="assets/snu_night.jpg" alt="Conference Template Banner">
-        <div class="top-left">
+        <img src="assets/banner_international.png" alt="Conference Template Banner">
+        <!-- <div class="top-left">
             <span class="title1">LSK </span><span class="title2">50th Anniversary</span> 
         </div>
         <div class="bottom-right">
             Oct.31 - Nov.1, 2025 <br> Seoul National University
-        </div>
+        </div> -->
     </div>
 
     <table class="navigation">
@@ -39,18 +60,26 @@
                 <a title="Conference Program" href="program">Program</a> 
             </td>
             <td class="navigation">
+                <a title="Handbook" href="handbook">Handbook</a> 
+            </td>
+            <td class="navigation">
                 <a title="LSK History" href="lsk">LSK</a>
+            </td>
+            <td class="navigation">
+                <a title="Directions to the Conference" href="directions">Venue</a>
             </td>
             <td class="navigation">
                 <a title="Register for the Conference" href="registration">Register</a>
             </td>
-            <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
-            </td>
         </tr>
     </table>
 
-    <h2>Keynote Speech 1</h2>
+    <nav>
+      <a href="https://lsk50th.github.io/keynote/#key1">Keynote Speech 1</a> |
+      <a href="https://lsk50th.github.io/keynote/#key2">Keynote Speech 2</a>
+    </nav>
+
+    <section><h2 id="key1">Keynote Speech 1</h2>
     <h3>Hell Raising: from the Politics of Language to the Meaning of Slurs</h3>
     <br>
     <div class="row">
@@ -73,6 +102,45 @@
     <p>
         Beaver’s research centers on the nature of meaning, taking formal semantics and pragmatics as a start point to approach questions with many different flavors, computational, philosophical, political, psychological, and sociological. His recent work includes the co-development in The Politics of Language, computational studies of differences between in-group and out-group language (with his student Venkat Govindarajan and others), work on the semantics of descriptions (with Liz Coppock), and work on the historical development of the mirative intensifier “very” (with Ashwini Deo). Earlier work includes the books Presupposition and Assertion in Dynamic Semantics, and Sense and Sensitivity (with Brady Clark). These together with two co-edited books, and many journal articles and book chapters, have garnered over 10,000 citations (Google Scholar). Beaver is a fellow of the Linguistics Society of America, and was founding editor with Kai von Fintel of the leading journal Semantics and Pragmatics, the first major open access journal in Linguistics.
     </p>
+    </section>
+
+    <br>
+    <br>
+
+    <section><h2 id="key2">Keynote Speech 2</h2>
+    <h3>What do Large <i>Language Models</i> know about <i>language</i>?</h3>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="assets/Richard_Sproat.jpeg" width="200">
+        </div>
+        <div class="column">
+            <h4>Richard Sproat</h4>
+            Sakana AI
+        </div>
+    </div>  
+    <p>
+        When ChatGPT debuted in late 2022, and its linguistic abilities were on full display, it led to an immediate soul searching among linguists as to what this meant for their field. The reactions were various. At one end of the spectrum such systems were derided as being little more than “stochastic parrots”, with little or no implication for understanding human language abilities. Critics pointed to the obvious fact that Large Language Models—LLMs—are trained on largely decontextualized written text, in amounts that are many orders of magnitude higher than the amount of contextualized, mostly spoken, language that children are exposed to. At the other end of the spectrum were claims that the success of LLMs demonstrated that there is no need to presume an innate predisposition towards language, and that general systems with general learning biases are sufficient to the task. As LLMs have evolved to be ever more powerful, they have also become more multimodal, addressing to some extent the concern about decontextualization. Work in areas such as the BabyLM Challenge, has demonstrated that LLMs can learn at least some aspects of language from human-scaled amounts of data. Still, concerns remain, and the jury is still very much out on what exactly LLMs mean for theories of human language. If nothing else, it remains true that LLMs learn language in a vastly different way from the way humans do: To my knowledge, there is no documented case of a person learning language perfectly simply by ingesting trillions of words of text.
+    </p>
+    <p>
+        In this talk I will review a small fraction of the already sizable literature that investigates these questions, as a segue into discussing some of the research that I have been involved in recently that also speaks to these issues.
+    </p>
+    <p>
+        An obvious and easy point to make is that LLMs are exceedingly data hungry, and how well the system knows a particular language is directly related to how much data it has seen. This point certainly applies to human learners too, but with LLMs, even for languages where one would have thought there is “enough” data, one can find stark differences in LLMs’ abilities. For example (joint work with Brian Roark and Su-Youn Yoon) we show that LLMs are far better at spelling correction for English than they are for Korean, which is surely in part related to the fact that the models have been exposed to at least an order of magnitude more data for English than for Korean.
+    </p>
+    <p>
+        But a deeper question is what LLMs know about language. I don’t mean how well they have learned a particular language, or have internalized grammatical structures of that language, or how that grammatical knowledge is represented—the topic of much of the recent literature that probes LLMs’ linguistic abilities. What I mean instead is how well LLMs know things that a well-trained linguist would know about how languages vary—the genetic variation of language, if you will. For example, any linguist knows that languages differ in their word order preferences, with some patterns (SOV, SVO) being very common, others (VSO) somewhat less common, and still others (VOS) less common still. Any linguist should know the distinction between nominative-accusative and ergative-absolutive case marking; that some languages mark dual number in addition to singular and plural; that some languages make an inclusive-exclusive distinction in first person plural pronouns; that case prefixes are vanishingly rare compared to case suffixes. One way to probe this knowledge is to use LLMs as an assistant in creating natural-language-like Constructed Languages—ConLangs, and I will present ongoing work (with Chihiro Taguchi) where we investigate the use of LLMs to construct all aspects of ConLangs, from phonology to morphology and syntax. Our results show that not only is there a (sometimes surprising) difference in abilities of LLMs to do this, but even for LLMs that are competent at the task, the output varies in ways that seem to correspond to how common the feature is cross-linguistically. For example, we can prompt the system to produce the target words and phrases of the ConLang in a given order by explaining the word order variations found across languages, and by giving examples of what the intended order should be. We find that for SVO, SOV and VSO languages the results are usually accurate, whereas if we ask for VOS order (found in only 1.8% of the languages in the sample in https://wals.info/chapter/81), what we usually get instead is VSO order. These and similar results suggest that LLMs, while they have internalized some facts about language, are still strongly biased in what they know.
+    </p>
+    <p>
+        Linguistics, it seems, is still needed.
+    </p>
+    <h4>Bio</h4>
+    <p>
+        Richard Sproat is a research scientist at Sakana.ai, Japan, working on artificial intelligence in language processing, agentic systems and image understanding. He received his PhD in Linguistics from MIT in 1985, worked as a researcher at AT&T Bell Laboratories, as a professor at the University of Illinois Urbana-Champaign and the Oregon Health & Science University, as a research scientist at Google New York, then Google Tokyo, before joining Sakana.ai. He has published in a wide variety of areas of linguistics and computational linguistics, including work on experimental phonetics, computational morphology, text-to-speech synthesis, text normalization, and finite-state methods in language processing. He has a strong interest in writing systems and symbol systems more generally, with two of his recent books being in this area: <i>Symbols: An Evolutionary History from the Stone Age to the Future</i> (2023), and <i>Tools of the Scribe: How Writing Systems, Technology, and Human Factors Interact To Affect the Act of Writing</i> (with Brian Roark and Su-Youn Yoon, forthcoming 2025), both published by Springer.
+    </p>
+    </section>
+
+
 
     <footer>
         &copy; Conference Organizers
